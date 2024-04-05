@@ -1,10 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
+import NavBar from "./components/navBar/NavBar.tsx";
+import HomeSlider from "./components/homeSlider/HomeSlider.tsx";
 
 function App() {
   return (
     <>
-      <div className="text-red-500">home</div>
+      <NavBar />
+      <HomeSlider />
     </>
   );
 }

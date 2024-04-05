@@ -1,9 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-body {
+@font-face {
+  font-family: "wagner";
+  src: url("./assets/fonts/NT\ Wagner.otf") format("otf"),
+  url("./assets/fonts/NT\ Wagner.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "font-ars";
+  src: url("./assets/fonts/ARSMaquettePro-Light.woff2") format("otf"),
+  url("./assets/fonts/ARSMaquettePro-Light.woff2") format("opentype");
+}
+
+* {
+  font-family: "Lexend", sans-serif;
   margin: 0;
-padding: 0;
-box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-ars{
+  font-family: "font-ars", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+.wagner{
+  font-family: "wagner", sans-serif !important;
+  font-optical-sizing: auto;
+
+}
+
+/* override carousel style */
+.slick-list, .slick-track, .slick-slide, .slick-slide>div {
+  height: 100%;
+}
+.slick-slide>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ************ */
+
+
+header{
+
+}
+
+@media only screen and (max-width: 1536px) {
+  header{
+    aspect-ratio: 6 / 2;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  header{
+    aspect-ratio: 6 / 2;
+  }
+ 
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+  header{
+    aspect-ratio: 6 / 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  header{
+    aspect-ratio: 5 / 2;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header{
+    aspect-ratio: 5 / 2;
+  }
 }
