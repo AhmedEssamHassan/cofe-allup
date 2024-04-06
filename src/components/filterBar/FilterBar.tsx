@@ -1,26 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { categories } from "../data";
-function FilterBar() {
-  const [categoryes, setCategories] = useState<string[] | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState("javascript");
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setCategories(categories);
-    }, 2000);
-    return clearTimeout(timeout);
-  }, []);
-
-  const handleChange = (event: any) => {
-    setSelectedCategory(event.target.value);
-  };
+function FilterBar({
+  categories,
+  selectedCategory,
+  handleChange,
+}: {
+  categories: string[] | null;
+  selectedCategory: null | string;
+  handleChange: (event: any) => void;
+}) {
   return (
     <div className="container flex justify-center items-center">
       <div className="filter-bar overflow-x-auto px-10 flex gap-10 h-auto w-fit max-w-full border-b-2 border-[#00000025]">
         {categories
-          ? categories.map((el, index) => {
+          ? categories?.map((el, index) => {
               return (
                 <label
+                  key={index}
                   className={`
                   ${
                     el == selectedCategory
@@ -43,7 +38,7 @@ function FilterBar() {
                 </label>
               );
             })
-          : "loading..."}
+          : "loading"}
       </div>
     </div>
   );
