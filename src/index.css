@@ -1,18 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 @font-face {
   font-family: "wagner";
   src: url("./assets/fonts/NT\ Wagner.otf") format("otf"),
-  url("./assets/fonts/NT\ Wagner.otf") format("opentype");
+    url("./assets/fonts/NT\ Wagner.otf") format("opentype");
 }
 
 @font-face {
   font-family: "font-ars";
   src: url("./assets/fonts/ARSMaquettePro-Light.woff2") format("otf"),
-  url("./assets/fonts/ARSMaquettePro-Light.woff2") format("opentype");
+    url("./assets/fonts/ARSMaquettePro-Light.woff2") format("opentype");
 }
 
 * {
@@ -22,68 +22,88 @@
   box-sizing: border-box;
 }
 
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 2px;
+}
+.filter-bar::-webkit-scrollbar {
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: #ddd;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* lexend font */
 .lexend {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
 }
 
-.font-ars{
+/* ars font */
+.font-ars {
   font-family: "font-ars", sans-serif;
   font-optical-sizing: auto;
-  
 }
 
-.wagner{
+/* wagner font */
+.wagner {
   font-family: "wagner", sans-serif !important;
   font-optical-sizing: auto;
-
 }
 
 /* override carousel style */
-.slick-list, .slick-track, .slick-slide, .slick-slide>div {
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide > div {
   height: 100%;
 }
-.slick-slide>div{
+.slick-slide > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* ************ */
 
-
-header{
-
+header {
 }
 
 @media only screen and (max-width: 1536px) {
-  header{
+  header {
     aspect-ratio: 6 / 2;
   }
 }
 
 @media only screen and (max-width: 1280px) {
-  header{
+  header {
     aspect-ratio: 6 / 2;
   }
- 
 }
 
 @media only screen and (max-width: 1024px) {
- 
-  header{
+  header {
     aspect-ratio: 6 / 2;
   }
 }
 
 @media only screen and (max-width: 768px) {
-
-  header{
+  header {
     aspect-ratio: 5 / 2;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  header{
+  header {
     aspect-ratio: 5 / 2;
   }
 }
