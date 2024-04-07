@@ -33,6 +33,21 @@ export const menu: Menu = {
       name: "",
       price: 5,
     },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
   ],
   Beverages: [
     {
@@ -55,9 +70,55 @@ export const menu: Menu = {
       name: "",
       price: 5,
     },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
   ],
   // "Bun Kebab": [],
-  // "Category 1": [],
+  "Category 1": [
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+    {
+      image: "",
+      name: "",
+      price: 5,
+    },
+  ],
   // "Category 2": [],
   // "Category 3": [],
 };

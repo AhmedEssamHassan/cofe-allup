@@ -4,10 +4,16 @@ import Category from "../category/Category";
 import { categoriesTitles, menu } from "../data";
 
 function Categories() {
-  const [categories, setCategories] = useState<string[]>(categoriesTitles);
-
   const [selectedCategory, setSelectedCategory] =
     useState("All Time Favorites");
+
+  const [products, setProducts] = useState(menu["All Time Favorites"]);
+
+  useEffect(() => {
+    setProducts(menu[selectedCategory]);
+  }, [selectedCategory]);
+
+  console.log(products);
 
   const handleChange = (event: any) => {
     setSelectedCategory(event.target.value);
@@ -17,13 +23,10 @@ function Categories() {
     <div className="my-10">
       <FilterBar
         selectedCategory={selectedCategory}
-        categories={categories}
+        categories={categoriesTitles}
         handleChange={handleChange}
       />
-      <Category
-        selectedCategory={selectedCategory}
-        data={menu[selectedCategory]}
-      />
+      <Category selectedCategory={selectedCategory} data={products} />
     </div>
   );
 }

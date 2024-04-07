@@ -7,13 +7,11 @@ import cup from "../../assets/images/cup.png";
 
 function Header() {
   return (
-    <header
-      className="w-full rounded-xl overflow-hidden"
-      // style={{ aspectRatio: "5/2" }}
-    >
+    <header className="w-full rounded-xl overflow-hidden">
       <Slider
         slidesToShow={1}
-        // autoplay
+        autoplay
+        pauseOnHover={false}
         draggable
         swipeToSlide
         className="h-[100%]"
