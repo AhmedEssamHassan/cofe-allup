@@ -13,8 +13,6 @@ function Categories() {
     setProducts(menu[selectedCategory]);
   }, [selectedCategory]);
 
-  console.log(products);
-
   const handleChange = (event: any) => {
     setSelectedCategory(event.target.value);
   };

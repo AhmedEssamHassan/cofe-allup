@@ -1,6 +1,4 @@
 function CheckBoxButtonComponent({ field }: { field: any }) {
-  console.log(field);
-
   return (
     <>
       <style>
