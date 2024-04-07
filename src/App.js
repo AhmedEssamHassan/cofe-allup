@@ -6,7 +6,7 @@ import Verification from "./components/verification/Verification";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <Routes>
       <Route path="/" element={<Home isLoggedIn={isLoggedIn} />} />
