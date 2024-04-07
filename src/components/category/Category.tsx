@@ -15,8 +15,6 @@ function Category({
   selectedCategory: string;
   data: product[];
 }) {
-  console.log({ data });
-
   return (
     <div className="container py-10">
       <SectionTitle title={selectedCategory} />
